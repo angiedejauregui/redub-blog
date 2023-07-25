@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    background: whitesmoke; //#1b1b1d; //#333
+    color: #1b1b1d;
+  }
+
+  body {
+    min-height: 100vh;
+    font-size: 1.5rem;
+  }
+
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #764abc;
+    position: sticky;
+    top: 0;
+    padding: 1rem 3rem;
+
+    nav, ul {
+      display: flex;
+      gap: 2rem;
+      list-style-type: none;
+      color: white;
+
+      button {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+          color: #1b1b1d;
+        }
+      }
+    }
+  }
+
+  main {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  section {
+    margin-top: 1em;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      margin: 2rem 0;
+      
+      input, 
+      textarea,
+      button,
+      select {
+        font: inherit;
+        margin-bottom: 1em;
+      }
+
+      button {
+        border: 1px solid #1b1b1d;
+        padding: 3px;
+      }
+      .deleteButton {
+        background-color: indianred;
+        color: white;
+
+      }
+    }
+      
+  }
+
+  article {
+    border: 1px solid #1b1b1d;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em 0;
+    
+    .excerpt {
+      font-style: italic;
+    }
+
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.4;
+        margin: 0.5em 0;
+    }
+
+    .postCredit {
+      font-size: 1rem;
+
+      a {
+        margin-right: 0.7rem;
+        color: inherit;
+
+        &:hover {
+          color: hsla(0, 0%, 0%, 0.75);
+          text-decoration: none;
+        }
+      }
+    }
+}
+
+.reactionButton {
+  margin: 0 0.25em 0 0;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+}
